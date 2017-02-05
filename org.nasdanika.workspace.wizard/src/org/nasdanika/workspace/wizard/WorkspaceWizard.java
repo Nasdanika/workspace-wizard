@@ -975,7 +975,7 @@ public class WorkspaceWizard extends ModelingWorkspaceWizard {
 		
 		// Kinda bad style, load from a properties file?
 		repoMap.put("nasdanika-server", "http://www.nasdanika.org/server/repository");
-		repoMap.put("jetty", "http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.9.v20160517");
+		repoMap.put("jetty", "http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.15.v20161220/");
 		repoMap.put("maven-osgi", "http://www.nasdanika.org/maven-osgi");
 		
 		return repoMap;
