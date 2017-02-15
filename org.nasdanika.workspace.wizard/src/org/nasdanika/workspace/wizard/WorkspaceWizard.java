@@ -1277,7 +1277,7 @@ public class WorkspaceWizard extends ModelingWorkspaceWizard {
 	
 	@Override
 	public String getJavadocReportOutputDirectory() {
-  		return "${project.build.directory}/../"+getDocArtifactId()+"/apidocs";        		
+  		return "${project.build.directory}/../../"+getDocArtifactId()+"/apidocs";        		
 	}
 	
 	@Override
