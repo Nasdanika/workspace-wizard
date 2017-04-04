@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<toc label="Nasdanika">
+<toc label="Nasdanika" link_to="../org.nasdanika.help/toc.xml#Nasdanika">
    <topic href="doc/wizard.html" label="Application Workspace Wizard">
    </topic>
-   <link toc="org.nasdanika.help/toc.xml#Nasdanika"/>
 </toc>
