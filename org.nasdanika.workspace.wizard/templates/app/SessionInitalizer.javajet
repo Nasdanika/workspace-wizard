@@ -29,9 +29,9 @@ import org.nasdanika.core.CoreUtil.TokenSource;
 import org.osgi.service.component.ComponentContext;
 
 // Import model package(s)
-//import <%=wizard.getModelArtifactId()%>.<%=wizard.getJavaName()%>Factory;
-//import <%=wizard.getModelArtifactId()%>.<%=wizard.getJavaName()%>Package;
-//import <%=wizard.getModelArtifactId()%>.<%=wizard.getJavaName()%>;
+import <%=wizard.getModelArtifactId()%>.<%=wizard.getJavaName()%>Factory;
+import <%=wizard.getModelArtifactId()%>.<%=wizard.getJavaName()%>Package;
+import <%=wizard.getModelArtifactId()%>.<%=wizard.getJavaName()%>;
 
 public class <%=wizard.getJavaName()%>SessionInitializerComponent implements CDOSessionInitializer {
 	
