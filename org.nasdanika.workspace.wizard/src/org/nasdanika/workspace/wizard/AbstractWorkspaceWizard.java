@@ -345,7 +345,7 @@ public abstract class AbstractWorkspaceWizard extends Wizard implements INewWiza
 //	private ITargetLocation createMavenOsgiTargetLocation(org.eclipse.pde.core.target.ITargetPlatformService service) throws URISyntaxException {
 //		
 ////		repoMap.put("mars", "http://download.eclipse.org/releases/mars");
-////		repoMap.put("orbit", "http://download.eclipse.org/tools/orbit/downloads/drops/R20160221192158/repository");
+////		repoMap.put("orbit", "http://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository");
 ////		repoMap.put("jetty", "http://download.eclipse.org/jetty/updates/jetty-bundles-9.x/9.3.9.v20160517");
 //		
 //		List<String> repos = new ArrayList<>(getRepositories().values());

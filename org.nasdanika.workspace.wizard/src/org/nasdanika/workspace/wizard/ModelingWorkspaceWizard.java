@@ -129,7 +129,7 @@ public class ModelingWorkspaceWizard extends AbstractWorkspaceWizard {
 		
 		// Kinda bad style, load from a properties file?
 		repoMap.put("neon", "http://download.eclipse.org/releases/neon");
-		repoMap.put("orbit", "http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository");
+		repoMap.put("orbit", "http://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository");
 		return repoMap;
 	}
 	
