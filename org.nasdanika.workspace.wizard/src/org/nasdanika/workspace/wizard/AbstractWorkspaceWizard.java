@@ -458,14 +458,14 @@ public abstract class AbstractWorkspaceWizard extends Wizard implements INewWiza
 
 		description.setBuildSpec(new ICommand[] { java, manifest, schema });
 				
-		project.open(new SubProgressMonitor(progressMonitor, 1));
-		project.setDescription(description, new SubProgressMonitor(progressMonitor, 1));
+		project.open(SubMonitor.convert(progressMonitor, 1));
+		project.setDescription(description, SubMonitor.convert(progressMonitor, 1));
 
 		addMaven2NatureAndBuilder(progressMonitor, project);				
 
 		final IFolder srcContainer = project.getFolder("src");
 		if (!srcContainer.exists()) {
-			srcContainer.create(false, true, new SubProgressMonitor(progressMonitor, 1));
+			srcContainer.create(false, true, SubMonitor.convert(progressMonitor, 1));
 		}
 		final List<IClasspathEntry> classpathEntries = new ArrayList<>();
 		final IClasspathEntry srcClasspathEntry = JavaCore.newSourceEntry(srcContainer.getFullPath());
@@ -478,9 +478,9 @@ public abstract class AbstractWorkspaceWizard extends Wizard implements INewWiza
 				JavaCore.newContainerEntry(
 						new Path("org.eclipse.pde.core.requiredPlugins")));
 
-		javaProject.setRawClasspath(classpathEntries.toArray(new IClasspathEntry[classpathEntries.size()]),	new SubProgressMonitor(progressMonitor, 1));
+		javaProject.setRawClasspath(classpathEntries.toArray(new IClasspathEntry[classpathEntries.size()]),	SubMonitor.convert(progressMonitor, 1));
 
-		javaProject.setOutputLocation(new Path("/" + name + "/bin"), new SubProgressMonitor(progressMonitor, 1));
+		javaProject.setOutputLocation(new Path("/" + name + "/target/classes"), SubMonitor.convert(progressMonitor, 1));
 		createManifest(
 				name, 
 				requiredBundles, 
